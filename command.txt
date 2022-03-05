@@ -1,0 +1,2 @@
+ng g c component --inlineTemplate=true --inlineStyle=true --skip-tests=true
+ng g c component -t=true -s=true --skip-tests=true

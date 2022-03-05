@@ -1,0 +1,46 @@
+[
+    {
+        "type": "Group",
+        "name": "App",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "1QJIhE5tqCS2fMOv"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app.module.ts",
+        "parent_id": "1QJIhE5tqCS2fMOv",
+        "fsPath": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app.module.ts",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "OiUJaSYE452TMVHr"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app.component.ts",
+        "parent_id": "1QJIhE5tqCS2fMOv",
+        "fsPath": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app.component.ts",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "djXnKFCSGoLPVga3"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app.component.html",
+        "parent_id": "1QJIhE5tqCS2fMOv",
+        "fsPath": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app.component.html",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "ktrbynqIuHxo6sp8"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app-routing.module.ts",
+        "parent_id": "1QJIhE5tqCS2fMOv",
+        "fsPath": "c:\\Users\\Me\\Documents\\Me\\fullstack\\rxjs-training\\src\\app\\app-routing.module.ts",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "fvPgiyLCF1I8QE6K"
+    }
+]

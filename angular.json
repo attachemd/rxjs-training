@@ -6,6 +6,12 @@
     "rxjs-training": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "skipTests": true
+        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -27,6 +33,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,6 +101,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []

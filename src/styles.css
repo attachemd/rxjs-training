@@ -2,3 +2,5 @@
 body { font-family: 'Arial'; background: lightgray }
 ul { list-style-type: none; padding: 20px; }
 li { padding: 15px; background: lightcoral; margin-bottom: 10px; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
