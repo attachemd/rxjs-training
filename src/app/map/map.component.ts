@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { delay, from, map, of } from 'rxjs';
+import { delay, filter, from, map, of } from 'rxjs';
 import { RxjsService } from 'src/shared/rxjs.service';
 
 @Component({
@@ -64,12 +64,13 @@ export class MapComponent implements OnInit {
 
     console.log("********* from *********");
 
-    from([1, 2, 3, 4]).pipe(
+    from([1, 2, 3, 4, null]).pipe(
+      filter(param => !!param),
       map(param => this._rxjs.getData(param))
     ).subscribe(val => console.log(val));
 
     console.log("********* from *********");
-    from([1, 2, 3, 4]).pipe(
+    from([1, 2, 3, 4, null]).pipe(
       map(param => this._rxjs.getData(param))
     ).subscribe(val => val.subscribe(data => console.log(data)));
 
