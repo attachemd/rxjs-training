@@ -1,5 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject, delay, from, map, mergeAll, mergeMap, Observable, of, switchAll, switchMap } from 'rxjs';
+import { Observable, ReplaySubject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { BehaviorSubject, delay, from, map, mergeAll, mergeMap, Observable, of, 
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  public userRole$ = new ReplaySubject<string>(1);
   title = 'rxjs-training';
   ngOnInit(): void {
     var observable = Observable.create((observer: any) => {
@@ -27,9 +29,35 @@ export class AppComponent implements OnInit {
       window.document.getElementById("list")?.appendChild(node);
     }
 
+    this._startObservable().subscribe((toTest) => {
+      console.log(toTest);
+    });
+    // this._startObservable()
+    // this._startNewObservable().subscribe((toTest) => {
+    //   console.log(toTest);
+    // });
+    this.userRole$.next("userRole$");
   }
-//   redirectTo(uri:string){
-//     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
-//     this.router.navigate([uri]));
-//  }
+
+  private _startObservable() {
+    return new Observable<string>((observer) => {
+      this.userRole$.subscribe((toTest) => {
+        console.log(toTest);
+        console.log("strange!");
+        observer.next("_startObservable");
+        observer.complete();
+      });
+    });
+  }
+
+  private _startNewObservable() {
+    return new Observable<string>((observer) => {
+        observer.next("_startNewObservable");
+        observer.complete();
+    });
+  }
+  //   redirectTo(uri:string){
+  //     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+  //     this.router.navigate([uri]));
+  //  }
 }
