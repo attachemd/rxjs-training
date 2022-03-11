@@ -1,3 +1,4 @@
+// https://luukgruijs.medium.com/understanding-rxjs-map-mergemap-switchmap-and-concatmap-833fc1fb09ff#:~:text=Use%20mergeMap%20if%20you%20simply,order%20is%20important%20to%20you.
 import { Component, OnInit } from '@angular/core';
 import { delay, filter, from, map, of } from 'rxjs';
 import { RxjsService } from 'src/shared/rxjs.service';

@@ -14,6 +14,8 @@ import { MergeAllComponent } from './merge-all/merge-all.component';
 import { SwitchAllComponent } from './switch-all/switch-all.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
+import { FinalizeComponent } from './finalize/finalize.component';
+import { TapComponent } from './tap/tap.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.co
     MergeAllComponent,
     SwitchAllComponent,
     SwitchMapComponent,
-    BehaviorSubjectComponent
+    BehaviorSubjectComponent,
+    FinalizeComponent,
+    TapComponent
   ],
   imports: [
     BrowserModule,
