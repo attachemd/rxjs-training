@@ -16,6 +16,7 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { FinalizeComponent } from './finalize/finalize.component';
 import { TapComponent } from './tap/tap.component';
+import { TakeComponent } from './take/take.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TapComponent } from './tap/tap.component';
     SwitchMapComponent,
     BehaviorSubjectComponent,
     FinalizeComponent,
-    TapComponent
+    TapComponent,
+    TakeComponent
   ],
   imports: [
     BrowserModule,

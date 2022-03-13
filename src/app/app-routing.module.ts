@@ -9,6 +9,7 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SwitchAllComponent } from './switch-all/switch-all.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { TakeComponent } from './take/take.component';
 import { TapComponent } from './tap/tap.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'behavior-subject', component: BehaviorSubjectComponent },
   { path: 'finalize', component: FinalizeComponent },
   { path: 'tap', component: TapComponent },
+  { path: 'take', component: TakeComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
